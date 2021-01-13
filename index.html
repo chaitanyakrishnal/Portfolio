@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" id="css-load">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Header and Navigation Section -->
+    <section class="s1">
+        <div class="main-container">
+            <div class="greeting-wrapper">
+                <h1>Hi, I am Chaitanya Krishna</h1>
+            </div>
+            <!-- Holds Navigation, Profile Pid and What do i Do -->
+            <div class="intro-wrapper">
+                <div class="nav-wrapper">
+                    <div class="dot-wrapper">
+                        <div class="browser-dot" id="dot-1"></div>
+                        <div class="browser-dot" id="dot-2"></div>
+                        <div class="browser-dot" id="dot-3"></div>
+                    </div>
+
+                    <ul id="navigation">
+                        <li><a href="#contact" value="contact" data-value="contact">Contact</a></li>
+                        <li><a href="#about-me" value="about-me" data-value="about-me">About Me</a></li>
+                        <li><a href="#projects" value="projects" data-value="projects">Projects</a></li>
+                        <li><a href="#react_projects" value="react_projects" data-value="react_projects">React Projects</a></li>
+                        <li><a href="#blogs" value="blogs" data-value="blogs">Blogs</a></li>
+                    </ul>
+                </div>
+
+                <div class="left-column">
+                    
+                    <img src="./images/profile_pic.jpg" alt="" id="profile-pic">
+                    
+                    <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
+
+                    <div class="theams-option-wrapper">
+                        <div class="theam-dot" id="light-mode" onclick=onButtonClick(this.id)></div>
+                        <div class="theam-dot" id="blue-mode" onclick=onButtonClick(this.id)></div>
+                        <div class="theam-dot" id="green-mode" onclick=onButtonClick(this.id)></div>
+                        <div class="theam-dot" id="purple-mode" onclick=onButtonClick(this.id)></div>
+
+                    </div>
+
+                    <div id="setting-note">
+                        *These settings will ne saved for the next visit
+                    </div>
+                </div>
+
+                <div class="right-column">
+
+                    <div id="preview-shadow">
+                        <div id="preview">
+                            <h3>What I do</h3>
+                            <p>
+                                I did my Master of Science in Computer Science and have specialized in Data Science and Data Bases. 
+                                I am actively looking for opportunities as a Software Developer, Full Stack web developer, Machine Learning, and 
+                                Deep Learning Engineering.
+                            </p>
+                            <div class="corner" id="corner-lt"></div>
+                            <div class="corner" id="corner-rt"></div>
+                            <div class="corner" id="corner-lb"></div>
+                            <div class="corner" id="corner-rb"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="s2" id="about-me">
+        <div class="main-container">
+            <div class="about-wrapper">
+                <div class="about-me">
+                    <h5>About Me</h5>
+                    <p>
+                        Enthusiastic and dedicated, I’m seeking a project or position where I can grow, develop, and make an impact. I am good at what I do. I am a web developer, a software developer and have specialized is Machine Learning and Deep Learning. I’m happy to apply the experience and skills I’ve obtained in my career in order to manage projects
+                    </p>
+
+                    <hr>
+                    <h5>Top Expertise</h5>
+                    <p>Intersed in Python Development</p>
+                    <div id="skills">
+                        <ul>
+                            <li>C</li>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>PHP</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Java Script</li>
+                        </ul>
+
+                        <ul>
+                            <li>Flask</li>
+                            <li>Spring Boot</li>
+                            <li>Machine Learning</li>
+                            <li>Deep Learning</li>
+                            <li>ReactJS</li>
+                            <li>Django</li>
+                            <li>Spark</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="acheivements">
+                    <h5>Education</h5>
+                    <div class="education-college">
+                        <h6>Master of Science in Computer Science</h6>
+                        <p>
+                            -- University of Texas at Arlington
+                        </p>
+                        <div class="point"><h1>GPA:3.8</h1></div>
+                    </div>
+
+                    <div class="education-college">
+                        <h6>Bachelor of Technology in Computer Science</h6>
+                        <p>
+                            -- Mahatma Gandhi Institute of Technology
+                        </p>
+                        <div class="point">
+                            <h1>GPA:3.7</h1>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <h5>Leetcode Profile Overview</h5>
+                    <!-- <h5>Linkedin and Medium Links</h5>
+                    <ul>
+                        <li>Linkedin : <a href="https://www.linkedin.com/in/chaitanya-krishna-lanka-9320a017a">Check Out by LinkedIn Profile</a></li>
+                        <li>Medium : <a href="https://medium.com/@chaitanyakrishna.lanka">Want to Read some of my Blogs</a></li>
+                    </ul> -->
+                    <div class="acheivements-image">
+                        <img src="./images/leetcode.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section class="s1" id="projects">
+        <div class="main-container">
+            <h3 style="text-align: center;">Projects</h3>
+            <div class="projects-wrapper">
+                <div class="project">
+                    <a id="project_a" href="./projects/appraldetection.html">
+                        <div>
+                            <img src="./images/apprel.jpg" alt="" class="project-img">
+                            <p>
+                                Apprel Recommendation System using Text Based and Image Based models
+                                <a href="./projects/appraldetection.html">Read More</a>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project">
+                    <a id="project_a" href="./projects/cms-blogging.html">
+                        <div>
+                            <img src="./images/contentmanagement.jpg" alt="" class="project-img">
+                            <p>
+                                Content Management System - Blogging System
+                                <a href="./projects/cms-blogging.html">Read More</a>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- React Projects -->
+    <section class="s2" id="react_projects">
+        <div class="main-container">
+            <h3 style="text-align: center;">React Projects</h3>
+            <div class="projects-wrapper">
+                <div class="project">
+                    <a id="project_a" href="./projects/whatsappclone.html">
+                        <div>
+                            <img src="./images/whatsappclonesingin.png" alt="" class="project-img">
+                            <p>
+                                Whatsapp Clone Implements using React and deployed using google firebase
+                                <a href="./projects/whatsappclone.html">Read More</a>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project">
+                    <a id="project_a" href="./projects/tictactoe.html">
+                        <div>
+                            <img src="./images/tictactoe.png" alt="" class="project-img">
+                            <p>
+                                A Tic Tac Toe game which is virtually unwinnable. The best of the best player could the draw the game but not win it.
+                                <a href="./projects/tictactoe.html">Read More</a>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blogs Section -->
+    <section class="s1" id="blogs">
+        <div class="main-container">
+            <h3 style="text-align: center;">Blogs</h3>
+            <div class="projects-wrapper">
+                <div class="project">
+                    <a id="project_a" href="https://medium.com/@chaitanyakrishna.lanka/predicting-pneumonia-with-87-percent-accuracy-319dee16ad9d">
+                        <div>
+                            <img src="./images/xray.jpg" alt="" class="project-img">
+                            <p>
+                                Predicting Pneumonia with 87 Precent Accuracy 
+                                <a href="https://medium.com/@chaitanyakrishna.lanka/predicting-pneumonia-with-87-percent-accuracy-319dee16ad9d">Read More</a>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project">
+                        <a id="project_a" href="https://medium.com/@chaitanyakrishna.lanka/face-identification-c83736be75a3">
+                            <div>
+                                <img src="./images/backgroundimage.jpg" alt="" class="project-img">
+                                <p>
+                                    Face Identification
+                                    <a href="https://medium.com/@chaitanyakrishna.lanka/face-identification-c83736be75a3">Read More</a>
+                                </p>
+                            </div>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="s2" id= "contact">
+        <div class="main-container">
+            <h3 style="text-align: center;">Contact Me</h3>
+            <div class="contact-wrapper">
+                <div class="contact-description">
+                    <h5>Contact</h5>
+                    <p>
+                        Hi, if you are intrested in my profile and want to contact me feel free to contact me via email or send a connection request via Linkedin. Thank you for spending some time reading my protfolio.
+                    </p>
+                </div>
+
+                <div class="contact-details">
+                    <h5>Contact Details</h5>
+                    <ul>
+                        <li>Email: <a href="">chaitanyakrishna.lanka@gmail.com</a></li>
+                        <li>LinkedIn: <a href="https://www.linkedin.com/in/chaitanya-krishna-lanka-9320a017a">www.linkedin.com/in/chaitanya-krishna-lanka-9320a017a</a></li>
+                        <li>Medium: <a href="https://medium.com/@chaitanyakrishna.lanka">https://medium.com/@chaitanyakrishna.lanka</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="appraldetection.css"> -->
+</head>
+<body>
+
+    <!--============================== Container====================================-->
+    <div class="main-container">
+        <div class="project-decription">
+            <div class="project-heading">
+                <!--====================== Heading Here ===============================-->
+                <h1>Apprel Recommendation System Using Image Based and Text Based machine learning</h1>
+            </div>
+
+            <!--========================== Content ===============================-->
+            <div class="section_body">
+                <h3>Introduction</h3>
+                <p>
+                    This project is a product recommendation software that recommends similar products given the customer chooses a product. 
+                    Most of the huge companies use collaborative filtering or associate rules to recommend similar products. 
+                    The disadvantage is that these algorithms require a huge amount of customer data, their preferences, and other details. 
+                    Many of the new startups will not have access to this type of data. This project reads the data of the products, their images and then recommends 
+                    similar products without having the need of the customer data. This project recommends similar products using the title of the product and the image of the product.
+                </p>
+
+                <h3>Implementation:</h3>
+                <p>
+                    The project is implemented using two different technologies. The titles the processed using the google word2vec model and the images 
+                    are processed using the VGG16 neural network. The titles are converted to vectors using the word2vec model and the euclidean distance 
+                    between those vectors is calculated. The images are processed using the VGG16 and after the processing, the last layer is removed and 
+                    the 128-dimensional vector of the last but one layer is used to calculate the euclidean distance. Based on the euclidean distance the top best similar products are recommended.
+                </p>
+
+                <h3>Conclusion:</h3>
+                <p>
+                    The project performs very well but not as good as the state of the art models which process far more data. This project can be implemented by 
+                    a startup that does not have so much data and resources.
+                </p>
+
+                <!-- <p><a href="../index.html#portfolio">Return To Home Page</a></p> -->
+
+            </div>
+
+            <p><a href="../index.html#projects">Return To Home Page</a></p>
+
+
+        </div>
+    </div>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>
